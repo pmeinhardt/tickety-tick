@@ -4,13 +4,10 @@
 module.exports = {
   coverageDirectory: "coverage",
   collectCoverageFrom: ["<rootDir>/src/**/*.{js,jsx,ts,tsx}"],
-  globals: {
-    COMMITHASH: "test-commit-hash",
-  },
   setupFilesAfterEnv: ["<rootDir>/test/setup.js"],
   testEnvironment: "jsdom",
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
+    "^.+\\.(js|jsx|ts|tsx)$": "@swc/jest",
     "(?!^.+\\.(js|jsx|ts|tsx)$)": "<rootDir>/test/transforms/file.js",
   },
   transformIgnorePatterns: [

@@ -1,5 +1,6 @@
 import React from "react";
 
+import { COMMITHASH } from "../../info";
 import CopyButton from "./copy-button";
 
 export type Props = { errors: Error[] };

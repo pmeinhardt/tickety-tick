@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../icons/icon.svg";
+import { COMMITHASH } from "../../info";
 import Content from "./content";
 import ExternalLink from "./external-link";
 import Navbar from "./navbar";

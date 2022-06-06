@@ -1,17 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "tickety-tick",
+  "version": "5.0.1",
+  "description": "A browser extension that helps you to create commit messages and branch names from story trackers.",
   "icons": {
-    "16": "icon-16.png",
-    "32": "icon-32.png",
-    "48": "icon-48.png",
-    "64": "icon-64.png",
-    "128": "icon-128.png"
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "jid1-ynkvezs8Qn2TJA@jetpack"
+    }
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background/index.ts"]
   },
   "content_scripts": [
     {
@@ -19,7 +24,7 @@
        "http://*/*",
        "https://*/*"
      ],
-     "js": ["content.js"]
+     "js": ["content/index.ts"]
     }
   ],
   "web_accessible_resources": [
@@ -31,32 +36,32 @@
   ],
   "browser_action": {
     "default_title": "Git Branch/Message",
-    "default_popup": "popup.html",
+    "default_popup": "popup/index.html",
     "default_icon": {
-      "64": "icon-64.png",
-      "32": "icon-32.png",
-      "16": "icon-16.png"
+      "64": "icons/icon-64.png",
+      "32": "icons/icon-32.png",
+      "16": "icons/icon-16.png"
     },
     "theme_icons": [
       {
-        "light": "icon-light-64.png",
-        "dark": "icon-64.png",
+        "light": "icons/icon-light-64.png",
+        "dark": "icons/icon-64.png",
         "size": 64
       },
       {
-        "light": "icon-light-32.png",
-        "dark": "icon-32.png",
+        "light": "icons/icon-light-32.png",
+        "dark": "icons/icon-32.png",
         "size": 32
       },
       {
-        "light": "icon-light-16.png",
-        "dark": "icon-16.png",
+        "light": "icons/icon-light-16.png",
+        "dark": "icons/icon-16.png",
         "size": 16
       }
     ]
   },
   "options_ui": {
-    "page": "options.html"
+    "page": "options/index.html"
   },
   "commands": {
     "_execute_browser_action": {

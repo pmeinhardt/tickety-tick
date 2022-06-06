@@ -12,6 +12,3 @@ declare module "*.svg" {
 
 // Unfortunately there are no type definitions for "micro-match" at the moment
 declare module "micro-match";
-
-// This global const is defined by the Webpack DefinePlugin
-declare const COMMITHASH: string;

@@ -1,5 +1,3 @@
-import "./index.scss";
-
 import browser from "webextension-polyfill";
 
 import enhance from "../core/enhance";

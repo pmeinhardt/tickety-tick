@@ -9,7 +9,7 @@ node_modules/
 # Optional npm cache directory
 .npm/
 
-# Optional eslint cache
+# Optional ESLint cache
 .eslintcache/
 
 # Build output
@@ -17,3 +17,6 @@ dist/
 
 # Test coverage reports
 coverage/
+
+# Parcel bundler cache (https://parceljs.org/)
+.parcel-cache/
