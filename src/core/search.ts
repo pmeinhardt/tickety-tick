@@ -10,6 +10,7 @@ import Linear from "./adapters/linear";
 import Notion from "./adapters/notion";
 import Tara from "./adapters/tara";
 import Trello from "./adapters/trello";
+import YouTrack from "./adapters/youtrack";
 import defaults from "./defaults";
 import type { Adapter } from "./types";
 
@@ -40,6 +41,7 @@ async function search(adapters: Adapter[], url: URL, document: Document) {
 }
 
 const stdadapters: Adapter[] = [
+  Clickup,
   GitHub,
   GitLab,
   JiraCloud,
@@ -48,7 +50,7 @@ const stdadapters: Adapter[] = [
   Notion,
   Tara,
   Trello,
-  Clickup,
+  YouTrack,
 ];
 
 export { search, stdadapters };
